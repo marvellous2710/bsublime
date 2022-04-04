@@ -1,0 +1,273 @@
+@import url('https://fonts.googleapis.com/css2?family=Great+Vibes&family=Lato:ital,wght@0,400;0,700;1,400&display=swap');
+
+body {
+    line-height: 1.8;
+    color: #898fa1;
+    font-size: 15px;
+    font-family: 'Lato', sans-serif;
+}
+
+h1,h2,h3,h4,h5 {
+    font-weight: 700;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    color: #11245A;
+}
+
+.title-sm {
+    font-size: 16px;
+    letter-spacing: 1px;
+}
+
+a {
+    font-weight: 700;
+    transition: all 0.4s ease;
+}
+
+img {
+    width: 100%;
+}
+
+small {
+    font-size: 12px;
+    letter-spacing: 2px;
+    font-weight: 700;
+}
+
+section {
+    padding-top: 100px;
+    padding-bottom: 100px
+}
+
+/*------------------------- NAVIGATION ---------------------------*/
+
+.navbar {
+    border-bottom: 1px solid black;
+}
+
+.logo-text {
+    font-size: 22px;
+    text-transform: uppercase;
+    color: #11245A;
+}
+
+.navbar .nav-link {
+    font-size: 12px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+
+}
+
+.navbar-light .navbar-nav .nav-link.active {
+    color: #11245A;
+}
+
+/*-------------------------FIN NAVIGATION ---------------------------*/
+
+/*-------------------------HOME ---------------------------*/
+#home {
+    background: linear-gradient(rgba(17, 36, 90, 0.8), rgba(17, 36, 90, 0.8)), url(../img/verre.jpeg);
+    min-height: 100vh;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    display: flex;
+    align-items: center;
+}
+
+#home h1 {
+    font-weight: 700;
+}
+
+#home p {
+    max-width: 550px;
+    margin: 18px auto;
+}
+
+.btn {
+    font-weight: 700;
+    font-size: 12px;
+    text-transform: uppercase;
+    padding: 12px 28px; 
+    border-radius: 0;
+}
+
+.btn-brand {
+    background-color: #11245A;
+    color: white;
+}
+
+.btn-brand:hover {
+    background-color: white;
+    color: #11245A;
+}
+/*------------------------- FIN HOME ---------------------------*/
+
+/*------------------------- SERVICES ---------------------------*/
+
+.section-intro {
+    text-align: center;
+    margin-bottom: 60px;
+}
+
+.section-intro .hline {
+    width: 120px;
+    height: 2px;
+    background-color: rgb(0, 0, 0, 0.1);
+    margin: 16px auto 0 auto;
+}
+
+.icon-box {
+    width: 60px;
+    height: 60px;
+    background-color: #11245A;
+    color: white;
+    border-radius: 4px;
+    display: flex;
+    align-items: center;
+    justify-items: center;
+    font-size: 30px;
+    flex: none;
+}
+/*-------------------------  FIN SERVICES ---------------------------*/
+
+/*-------------------------  PORTOFOLIO ---------------------------*/
+
+.portofolio-item {
+    overflow: hidden;
+    position: relative;
+}
+
+.portofolio-item img {
+    height: 300px;
+}
+
+.portofolio-item img, .portofolio-item .portofolio-overlay {
+    transition: all 0.4s ease;
+}
+
+.portofolio-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(17, 36, 90, 0.8);
+    display: flex;
+    align-items: flex-end;
+    padding: 30px;
+    opacity: 0;
+}
+
+.portofolio-overlay h3, .portofolio-overlay h6 {
+    color: white;
+}
+
+.portofolio-item:hover .portofolio-overlay{
+    opacity: 1;
+}
+
+.portofolio-item:hover img {
+    transform: scale(1.1);
+}
+/*-------------------------    FIN PORTOFOLIO ---------------------------*/
+
+/*-------------------------    FEATURE ---------------------------*/
+.feature .icon-box {
+    width: 34px;
+    height: 34px;
+    border-radius: 100px;
+    font-size: 25px;
+}
+
+.team-member {
+    background-color: #11245A;
+}
+
+.team-member .hline {
+    width: 70px;
+    height: 2px;
+    margin: 15px auto;
+    background-color: rgba(255, 255, 255, 0.434);
+}
+
+.team-member-img img{
+    height: 200px;
+}
+
+.team-member .team-member-img img, .team-member .team-member-img .social-icons{
+    transition: all 0.4s ease;
+}
+
+.team-member .team-member-img {
+    position: relative;
+    overflow: hidden;
+}
+
+.team-member .team-member-img .social-icons {
+    width: 100%;
+    height: 60px;
+    background-color: white;
+    position: absolute;
+    bottom: -60px;
+    left: 0;
+    display: flex;
+    justify-content: center;
+}
+
+.team-member .team-member-img .social-icons a {
+    width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+ 
+}
+
+.team-member:hover .team-member-img .social-icons{
+    bottom: 0;
+}
+
+.team-member:hover img {
+    transform: translateY(-60px);
+}
+/*-------------------------   FIN FEATURE ---------------------------*/
+
+/*-------------------------   FORM ---------------------------*/
+form .form-control {
+    border-radius: 0;
+}
+
+form .form-control:focus {
+    box-shadow: none;
+    border-color: #11245A;
+}
+
+/*-------------------------   FIN FORM ---------------------------*/
+
+
+/*-------------------------   FOOTER ---------------------------*/
+
+
+footer {
+    background: #11245A;
+    color: white;
+}
+
+.footer-top {
+    padding-top: 80px;
+    padding-bottom: 30px;
+}
+
+.footer-bottom {
+    padding-top: 30px;
+    padding-bottom: 30px;
+    border-top: 1px solid black;
+}
+ .footer-links {
+     display: flex;
+     flex-direction: column;
+ }
+
+
+
+/*-------------------------   FIN FOOTER ---------------------------*/
